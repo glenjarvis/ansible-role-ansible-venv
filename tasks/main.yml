@@ -1,0 +1,19 @@
+---
+- include_tasks: tasks/_ansible_venv_{{ ansible_distribution }}_tasks.yml
+
+- name: Ensure base directory for ansible venv exists
+  file:
+    path: "{{ _ansible_venv_base }}"
+    state: directory
+    recurse: yes
+    owner: "{{ _ansible_venv_owner }}"
+    group: "{{ _ansible_venv_group }}"
+    mode: "{{ _ansible_venv_mode }}"
+
+- pip:
+     name: "{{ item }}"
+     virtualenv: "{{ _ansible_venv_base }}/{{ _ansible_venv_name }}"
+     virtualenv_command: "{{ _ansible_venv_seed_python_exec }} -m venv"
+  loop:
+    - ansible-base
+    - ansible

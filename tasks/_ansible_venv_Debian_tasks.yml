@@ -1,0 +1,29 @@
+---
+# Shell until this released: https://github.com/glenjarvis/ansible-simple-apt
+- name: Update repositories cache
+  shell: >
+    apt-get -u update 
+  args:
+    warn: no
+  become: yes
+
+- name: Install packages needed for virtualenv
+  shell: >
+    apt install -y python3-venv
+  args:
+    warn: no
+  become: yes
+
+- name: Install packages needed for virtualenv
+  shell: >
+    apt install -y python3-venv
+  args:
+    warn: no
+  become: yes
+
+- name: Install packages needed for virtualenv
+  shell: >
+    apt-get -y upgrade
+  args:
+    warn: no
+  become: yes
