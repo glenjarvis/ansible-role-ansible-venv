@@ -10,12 +10,12 @@ None
 Role Variables
 --------------
 
-_ansible_venv_base: /opt/venvs
-_ansible_venv_owner: root
-_ansible_venv_group: root
-_ansible_venv_mode: '0755'
-_ansible_venv_seed_python_exec: /usr/bin/python3
-_ansible_venv_name: ansible-current
+* _ansible_venv_base: /opt/venvs
+* _ansible_venv_owner: root
+* _ansible_venv_group: root
+* _ansible_venv_mode: '0755'
+* _ansible_venv_seed_python_exec: /usr/bin/python3
+* _ansible_venv_name: ansible-current
 
 Dependencies
 ------------
