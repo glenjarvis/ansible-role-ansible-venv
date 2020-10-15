@@ -3,7 +3,7 @@ galaxy_info:
   description: Isolated venv 
   company: Glen Jarvis Training & Consulting, LLC
 
-  issue_tracker_url: https://github.com/glenjarvis/ansible_venv/issues
+  issue_tracker_url: https://github.com/glenjarvis/ansible-role-ansibel-venv/issues
 
   license: MIT
 
